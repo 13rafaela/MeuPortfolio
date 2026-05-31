@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfólio | Rafaela Dos Anjos</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Rafaela Dos Anjos</div>
+
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#skills">Habilidades</a>
+    <a href="#about">Sobre</a>
+    <a href="#contact">Contato</a>
+  </nav>
+
+  <div class="theme-toggle" onclick="toggleTheme()">
+    <i class='bx bx-moon'></i>
+  </div>
+</header>
+<section class="home" id="home">
+
+  <div class="home-content">
+    <h1>Rafaela Dos Anjos</h1>
+    <h3>Redes de Computadores</h3>
+
+    <p class="pp">
+      Estudante de Tecnologia em Redes de Computadores com foco em suporte técnico,
+      infraestrutura e comunicação de redes. Possui conhecimentos em fundamentos
+      de redes, Linux e programação em Python, com experiência acadêmica no uso
+      de Git e GitHub para versionamento de projetos.
+    </p>
+
+    <a href="#" class="btn">Download CV</a>
+  </div>
+
+  <div class="home-img">
+    <img src="img/foto_rafaela_port.jpeg" alt="Rafaela Dos Anjos">
+  </div>
+
+</section>
+
+
+<section class="skills" id="skills">
+  <h2>Habilidades Técnicas</h2>
+
+  <div class="skills-container">
+    <div class="skill-item">
+      <i class="devicon-python-plain"></i>
+      <h3>Python</h3>
+    </div>
+
+    <div class="skill-item">
+      <i class="devicon-django-plain"></i>
+      <h3>Django</h3>
+    </div>
+
+    <div class="skill-item">
+      <i class="devicon-linux-plain"></i>
+      <h3>Linux</h3>
+    </div>
+
+    <div class="skill-item">
+      <i class='bx bx-network-chart'></i>
+      <h3>Redes</h3>
+    </div>
+
+    <div class="skill-item">
+      <i class='bx bx-support'></i>
+      <h3>Suporte</h3>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about" centered >
+  <h2>Sobre</h2>
+  <p>
+   <p class="pp">
+Sou estudante de Tecnologia em Redes de Computadores, com foco em
+infraestrutura e comunicação de redes. Possuo conhecimentos em fundamentos
+de redes e no modelo OSI, além de experiência acadêmica com Python para
+automatizações e uso de Git e GitHub para versionamento de projetos.
+
+Busco constante aprimoramento técnico com o objetivo de atuar como
+Analista de Redes, contribuindo com configuração, monitoramento e
+gerenciamento de infraestruturas.
+</p>
+
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contato</h2>
+
+  <div class="contact-icons">
+    <a href="mailto:sopebr1209@gmail.com" target="_blank">
+      <i class='bx bx-envelope'></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/rafaela-lima-712a04344" target="_blank">
+      <i class='bx bxl-linkedin'></i>
+    </a>
+
+    <a href="https://github.com/13rafaela" target="_blank">
+      <i class='bx bxl-github'></i>
+    </a>
+  </div>
+</section>
+
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("dark")
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,299 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== TEMA LIGHT ===== */
+:root {
+  --main-color: #e75480;      /* rosa sakura principal */
+  --bg-color-01: #fff7fb;     /* fundo branco rosado */
+  --bg-color-02: #fdebf3;     /* seção levemente rosa */
+  --text-color: #2b2b2b;      /* texto escuro suave */
+}
+
+
+/* ===== TEMA DARK ===== */
+.dark {
+  --main-color: #3b82f6;
+  --bg-color-01: #0b1120;
+  --bg-color-02: #111827;
+  --text-color: #e5e7eb;
+}
+
+/* ===== BASE ===== */
+body {
+  background: var(--bg-color-01);
+  color: var(--text-color);
+  transition: 0.3s;
+}
+
+section {
+  padding: 80px 8%;
+  align-content: center;
+}
+
+/* ===== HEADER ===== */
+header {
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-color-02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--main-color);
+}
+
+.theme-toggle {
+  cursor: pointer;
+  font-size: 22px;
+  color: var(--main-color);
+}
+
+.contact {
+  text-align: center;
+  padding: 4rem 10%;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  font-size: 28px;
+  color: #444;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffe4ec; /* sakura soft */
+  transition: 0.3s ease;
+}
+
+.contact-icons a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* DARK MODE */
+body.dark .contact-icons a {
+  background: #1e1e1e;
+  color: #ff8fb1; /* sakura glow */
+}
+
+
+
+/* ===== HOME ===== */
+.home {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.home-content {
+  max-width: 700px;
+}
+
+.home h1 {
+  font-size: 42px;
+}
+
+.home h3 {
+  margin: 10px 0;
+  color: var(--main-color);
+}
+
+/* ===== BOTÃO ===== */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--main-color);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* ===== SKILLS ===== */
+.skills {
+  background: var(--bg-color-02);
+  text-align: center;
+}
+
+.skills-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  background: var(--bg-color-01);
+  padding: 30px;
+  border-radius: 15px;
+  width: 150px;
+  transition: 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px var(--main-color);
+}
+
+.skill-item i {
+  font-size: 50px;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+/* ===== ABOUT ===== */
+.about {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+  text-align: center;
+  background: var(--bg-color-02);
+}
+
+.contact-links {
+  margin-top: 20px;
+}
+
+.contact-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px) {
+  .home {
+    text-align: center;
+    justify-content: center;
+  }
+
+  nav {
+    display: none;
+  }
+}
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  padding: 4rem 10%;
+}
+
+.home-content {
+  max-width: 520px;
+}
+
+.home-img img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+  transition: 0.3s ease;
+}
+
+.home-img img:hover {
+  transform: scale(1.03);
+}
+
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-img img {
+    width: 220px;
+  }
+}
+.contact-icons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--bg-color-02);
+  border: 1px solid rgba(255,255,255,0.08);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-icons a i {
+  font-size: 26px;
+  color: var(--main-color);
+  transition: all 0.25s ease;
+}
+
+/* brilho neon suave */
+.contact-icons a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: var(--main-color);
+  opacity: 0;
+  filter: blur(18px);
+  transition: opacity 0.25s ease;
+  z-index: 0;
+}
+
+/* hover */
+.contact-icons a:hover {
+  transform: translateY(-4px) scale(1.05);
+  border-color: var(--main-color);
+  box-shadow: 0 0 12px rgba(0, 238, 255, 0.35);
+}
+
+.contact-icons a:hover::before {
+  opacity: 0.2;
+}
+
+.contact-icons a:hover i {
+  transform: scale(1.1);
+}
